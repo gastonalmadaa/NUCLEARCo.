@@ -1,0 +1,33 @@
+// CORSAIR INTERFAZ
+
+/* VARIABLES */
+$color-white-slogans: #FFFFFF;
+$color-white-title: #ECE81A;
+
+.corsair-video
+{margin: 0;
+    .corsair-video-gears 
+    {width: 100%;
+    height: 100%;}
+}
+
+.corsair-start
+{font-family: "Titillium Web", sans-serif;
+font-weight: 700;
+font-style: normal;
+text-align: center;
+margin: 0;
+    h2 
+    {font-size: 25px;
+    color: $color-white-slogans;}
+    h1 
+    {font-size: 70px;
+    color: $color-white-title;}
+}
+
+.corsair-youtube 
+{margin: 0;
+    iframe 
+    {width: 100%;
+    height: 300px;}
+}

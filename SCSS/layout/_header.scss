@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+/* VARIABLES */
+$color-green-hovers: #44D62C;
+
+/* HEADER Y ZONA NAVEGABLE */
+header 
+{
+background-color: black;
+text-align: center;
+align-items: center;
+font-family: "Titillium Web", sans-serif;
+font-weight: 300;
+font-style: normal;
+font-size: 14px;
+margin: 10px 5px;
+display: grid;
+grid-template-columns: 40px auto 30px 1% 30px;
+
+/* CUADRANTE 1 */
+    .header-cuadrante-1 
+    {grid-column: 1/2;
+        .logo {width: 40px;}
+        .logo:hover {transform: scale(1.1);
+                    transition: 1s;
+                    transform: rotate(360deg);}
+    }
+
+    /* CUADRANTE 2 */
+    .header-cuadrante-2
+    {grid-column: 2/3;
+        .grid-header-items-2
+        {align-items: center;
+        justify-content: space-between;
+            .grid-header-links  
+            {color: white;
+            padding: 0 1px;
+            text-decoration: none;}
+            .grid-header-links:hover 
+            {color: $color-green-hovers;
+            text-decoration: overline;
+            transform: translateY(-3px);}
+        }
+    }
+
+    /* CUADRANTE 3 */
+    .header-cuadrante-3
+    {grid-column: 3/4;
+        .grid-header-items-3
+        {width: 27px;}
+        .grid-header-items-3:hover 
+        {transform: scale(1.1);
+        transition: 1s;}
+    }
+
+    /* CUADRANTE 4 */
+    .header-cuadrante-4
+    {grid-column: 5/6;
+        .grid-header-items-3
+        {width: 27px;}
+        .grid-header-items-3:hover
+        {transform: scale(1.1);
+        transition: 1s;}
+    }
+}

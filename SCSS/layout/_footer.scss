@@ -1,0 +1,143 @@
+/* MIXIN */
+@mixin titles ($size, $color, $padding, $align)
+{font-size: $size;
+color: $color;
+padding: $padding;
+text-align: $align;}
+/* VARIABLES */
+$color-white-banner: #EEEEEE;
+$color-green-hovers: #44D62C;
+
+// FOOTER
+footer 
+{
+border-top: 2px solid $color-white-banner;
+
+/* CUADRANTE 1 */
+.cuadrante-1 
+{margin-left: 5px;
+    .grid-footer-title 
+    {@include titles(15px, white, 5px 0, center);}
+
+    .grid-footer-items-1-a
+    {
+        a 
+        {color: white;
+        text-decoration: none;
+        padding: 5px 0;
+            img 
+            {width: 20px;
+            margin-right: 8px}
+            img:hover 
+            {transform: scale(1.1);
+            transition: 1s;}
+        }
+        a:hover
+        {color: $color-green-hovers;
+        text-decoration: overline;}
+    }
+
+    .grid-footer-items-1-b 
+    {color: white;
+        img 
+        {width: 20px;
+        margin-right: 8px;
+            span 
+            {font-size: 14px;
+            padding: 1px 0;}
+        }
+        img:hover 
+        {transform: scale(1.1);
+        transition: 1s;}
+    }
+
+    .grid-footer-items-1-c
+    {color: white;
+        img 
+        {
+        width: 20px;
+        margin-right: 8px;
+            span 
+            {font-size: 14px;
+            padding: 1px 0;}
+        }
+        img:hover 
+        {transform: scale(1.1);
+        transition: 1s;}
+    }
+}
+
+
+/* CUADRANTE 2 */
+.cuadrante-2
+{
+    .grid-footer-title 
+    {@include titles(15px, white, 5px 0, center);}
+
+    .grid-footer-items-2
+    {display: flex;
+    justify-content: center;
+        .footer-icons-2 {padding: 1px 10px;}
+        .footer-icons-2:hover
+        {transform: scale(1.1);
+        transition: 1s;}
+    }
+}
+
+
+/* CUADRANTE 3 */
+.cuadrante-3
+{
+    .grid-footer-title 
+    {@include titles(15px, white, 5px 0, center);}
+
+    .grid-footer-items-3
+    {display: flex;
+    justify-content: center;
+        .footer-icons-3 {padding: 1px 10px;}
+        .footer-icons-3:hover
+        {transform: scale(1.1);
+        transition: 1s;}
+    }
+}
+
+
+/* CUADRANTE 4 */
+.cuadrante-4
+{
+    .grid-footer-items-4
+    {display: flex;
+    justify-content: center;
+        .logo {width: 40px;}
+        .logo:hover 
+        {transform: scale(1.1);
+        transition: 1s;
+        transform: rotate(360deg);}
+    }
+}
+
+
+/* CUADRANTE 5 */
+.cuadrante-5
+{
+color: white;
+text-align: center;
+font-size: 11px;
+    .footer-items-5
+    {text-decoration: none;
+        .footer-icons-5-powered a 
+        {text-decoration: none;
+        color: white;}
+        .footer-icons-5-powered a:hover
+        {color: $color-green-hovers;
+        text-decoration: overline;}
+        a 
+        {
+            img {width: 25px;}
+            img:hover 
+            {transform: scale(1.1);
+            transition: 1s;}
+        }
+    }
+}
+}

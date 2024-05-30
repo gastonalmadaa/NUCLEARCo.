@@ -1,0 +1,17 @@
+/* VARIABLES */
+$color-blue-banner: #040450;
+
+.main-brands
+{ 
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-bottom: 5px solid $color-blue-banner;
+        img
+        {height: 75px;
+        width: 75px;
+        padding: 10px 10px;}
+        .brands:hover
+        {transform: scale(1.1);
+        transition: 1s;}
+}

@@ -1,0 +1,35 @@
+/* VARIABLES */
+$color-green-hovers: #44D62C;
+
+main 
+{   
+color: white;
+text-align: center;
+position: relative;
+display: flex;
+    video 
+    {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    }
+
+    .start-conteiner
+    {
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: inline-block;
+        margin: 0 auto;
+        h1 {font-size: 22px;}
+        h2 {font-size: 16px;}
+        .shopnow    {color: white;
+                    font-size: 22px;
+                    text-decoration: none;}
+        .shopnow:hover  {color: $color-green-hovers;
+                        text-decoration: overline;}
+    }  
+}
