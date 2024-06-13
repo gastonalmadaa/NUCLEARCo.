@@ -1,5 +1,7 @@
 @charset "UTF-8";
-/* Reset */
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+/* LAYOUTS */
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
@@ -124,6 +126,31 @@ header .header-cuadrante-4 .grid-header-items-3:hover {
   font-size: 15px;
 }
 
+/* BANNER DE ENVÍOS */
+.banner-4 {
+  background-color: #111111;
+  margin: 0;
+  padding: 10px 10px;
+  align-items: center;
+  text-align: center;
+}
+.banner-4 .shipments img {
+  width: 30px;
+  height: 35px;
+}
+.banner-4 .shipments span {
+  color: white;
+  font-size: 13px;
+}
+.banner-4 .warranty img {
+  width: 30px;
+  height: 35px;
+}
+.banner-4 .warranty span {
+  color: white;
+  font-size: 13px;
+}
+
 /* VARIABLES */
 main {
   color: white;
@@ -179,16 +206,15 @@ main .start-conteiner .shopnow:hover {
   transition: 1s;
 }
 
-/* MIXIN DE LINKS */
 /* COLOR HOVER */
 /* SECCIÓN DE PERIFÉRICOS */
 .gears-conteiner {
   background-color: #00002C;
   display: grid;
-  grid-template-columns: repeat(7, auto);
-  grid-template-rows: repeat(7, auto);
-  justify-content: center;
-  padding: 20px 1px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 2, auto;
+  gap: 1px;
+  padding: 20px 5px;
   /* KEYBOARDS */
   /* MICES */
   /* AUDIO */
@@ -573,6 +599,530 @@ footer .cuadrante-5 .footer-items-5 a img:hover {
 }
 
 /* VARIABLES */
+/* FOR GAMER. BY GAMERS.™ */
+.razer-start h1 {
+  color: #42DD76;
+  font-size: 40px;
+  text-align: center;
+}
+.razer-start h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 25px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.razer-cards-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  gap: 2px;
+  /* ORNATA V3 */
+  /* BLACKWIDOW V3 */
+  /* VIPER ULTIMATE */
+  /* BASILISK V3 */
+  /* KRAKEN V3 */
+  /* NOMMO SPEAKERS V2 Pro */
+  /* ATLAS */
+  /* GOLIATHUS */
+  /* ISKUR V2 */
+  /* FUJIN Pro */
+}
+.razer-cards-container .product-card-1 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.razer-cards-container .product-card-1 img {
+  width: 94%;
+  height: 250px;
+}
+.razer-cards-container .product-card-1 h2 {
+  color: #3CDB38;
+  font-size: 30px;
+  text-align: center;
+}
+.razer-cards-container .product-card-1 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.razer-cards-container .product-card-1 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.razer-cards-container .product-card-1 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.razer-cards-container .product-card-1 .price-button button {
+  background-color: #44D62C;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.razer-cards-container .product-card-1 .price-button button:hover {
+  background-color: #42DD76;
+}
+.razer-cards-container .product-card-1:hover {
+  background-color: #222222;
+}
+.razer-cards-container .product-card-2 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.razer-cards-container .product-card-2 img {
+  width: 94%;
+  height: 250px;
+}
+.razer-cards-container .product-card-2 h2 {
+  color: #3CDB38;
+  font-size: 30px;
+  text-align: center;
+}
+.razer-cards-container .product-card-2 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.razer-cards-container .product-card-2 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.razer-cards-container .product-card-2 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.razer-cards-container .product-card-2 .price-button button {
+  background-color: #44D62C;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.razer-cards-container .product-card-2 .price-button button:hover {
+  background-color: #42DD76;
+}
+.razer-cards-container .product-card-2:hover {
+  background-color: #222222;
+}
+.razer-cards-container .product-card-3 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.razer-cards-container .product-card-3 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.razer-cards-container .product-card-3 h2 {
+  color: #3CDB38;
+  font-size: 30px;
+  text-align: center;
+}
+.razer-cards-container .product-card-3 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.razer-cards-container .product-card-3 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.razer-cards-container .product-card-3 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.razer-cards-container .product-card-3 .price-button button {
+  background-color: #44D62C;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.razer-cards-container .product-card-3 .price-button button:hover {
+  background-color: #42DD76;
+}
+.razer-cards-container .product-card-3:hover {
+  background-color: #222222;
+}
+.razer-cards-container .product-card-4 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.razer-cards-container .product-card-4 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.razer-cards-container .product-card-4 h2 {
+  color: #3CDB38;
+  font-size: 30px;
+  text-align: center;
+}
+.razer-cards-container .product-card-4 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.razer-cards-container .product-card-4 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.razer-cards-container .product-card-4 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.razer-cards-container .product-card-4 .price-button button {
+  background-color: #44D62C;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.razer-cards-container .product-card-4 .price-button button:hover {
+  background-color: #42DD76;
+}
+.razer-cards-container .product-card-4:hover {
+  background-color: #222222;
+}
+.razer-cards-container .product-card-5 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.razer-cards-container .product-card-5 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.razer-cards-container .product-card-5 h2 {
+  color: #3CDB38;
+  font-size: 30px;
+  text-align: center;
+}
+.razer-cards-container .product-card-5 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.razer-cards-container .product-card-5 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.razer-cards-container .product-card-5 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.razer-cards-container .product-card-5 .price-button button {
+  background-color: #44D62C;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.razer-cards-container .product-card-5 .price-button button:hover {
+  background-color: #42DD76;
+}
+.razer-cards-container .product-card-5:hover {
+  background-color: #222222;
+}
+.razer-cards-container .product-card-6 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.razer-cards-container .product-card-6 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.razer-cards-container .product-card-6 h2 {
+  color: #3CDB38;
+  font-size: 30px;
+  text-align: center;
+}
+.razer-cards-container .product-card-6 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.razer-cards-container .product-card-6 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.razer-cards-container .product-card-6 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.razer-cards-container .product-card-6 .price-button button {
+  background-color: #44D62C;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.razer-cards-container .product-card-6 .price-button button:hover {
+  background-color: #42DD76;
+}
+.razer-cards-container .product-card-6:hover {
+  background-color: #222222;
+}
+.razer-cards-container .product-card-7 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.razer-cards-container .product-card-7 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.razer-cards-container .product-card-7 h2 {
+  color: #3CDB38;
+  font-size: 30px;
+  text-align: center;
+}
+.razer-cards-container .product-card-7 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.razer-cards-container .product-card-7 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.razer-cards-container .product-card-7 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.razer-cards-container .product-card-7 .price-button button {
+  background-color: #44D62C;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.razer-cards-container .product-card-7 .price-button button:hover {
+  background-color: #42DD76;
+}
+.razer-cards-container .product-card-7:hover {
+  background-color: #222222;
+}
+.razer-cards-container .product-card-8 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.razer-cards-container .product-card-8 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.razer-cards-container .product-card-8 h2 {
+  color: #3CDB38;
+  font-size: 30px;
+  text-align: center;
+}
+.razer-cards-container .product-card-8 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.razer-cards-container .product-card-8 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.razer-cards-container .product-card-8 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.razer-cards-container .product-card-8 .price-button button {
+  background-color: #44D62C;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.razer-cards-container .product-card-8 .price-button button:hover {
+  background-color: #42DD76;
+}
+.razer-cards-container .product-card-8:hover {
+  background-color: #222222;
+}
+.razer-cards-container .product-card-9 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.razer-cards-container .product-card-9 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.razer-cards-container .product-card-9 h2 {
+  color: #3CDB38;
+  font-size: 30px;
+  text-align: center;
+}
+.razer-cards-container .product-card-9 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.razer-cards-container .product-card-9 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.razer-cards-container .product-card-9 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.razer-cards-container .product-card-9 .price-button button {
+  background-color: #44D62C;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.razer-cards-container .product-card-9 .price-button button:hover {
+  background-color: #42DD76;
+}
+.razer-cards-container .product-card-9:hover {
+  background-color: #222222;
+}
+.razer-cards-container .product-card-10 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.razer-cards-container .product-card-10 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.razer-cards-container .product-card-10 h2 {
+  color: #3CDB38;
+  font-size: 30px;
+  text-align: center;
+}
+.razer-cards-container .product-card-10 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.razer-cards-container .product-card-10 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.razer-cards-container .product-card-10 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.razer-cards-container .product-card-10 .price-button button {
+  background-color: #44D62C;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.razer-cards-container .product-card-10 .price-button button:hover {
+  background-color: #42DD76;
+}
+.razer-cards-container .product-card-10:hover {
+  background-color: #222222;
+}
+
+/* RAZER VIDEO LOOP */
 .razer-video {
   margin: 0;
 }
@@ -581,56 +1131,1006 @@ footer .cuadrante-5 .footer-items-5 a img:hover {
   height: 100%;
 }
 
-.razer-start {
+/* SLOGAN & YOUTUBE VIDEO */
+.razer-footer h2 {
   font-family: "Titillium Web", sans-serif;
-  font-weight: 700;
+  font-weight: 200;
   font-style: normal;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.razer-footer .razer-youtube {
+  margin: 0;
+  text-align: center;
+}
+.razer-footer .razer-youtube iframe {
+  width: 100%;
+  height: 315px;
+}
+.razer-footer .razer-end {
   text-align: center;
   margin: 0;
 }
-.razer-start h2 {
-  font-size: 25px;
-  color: #FFFFFF;
-}
-.razer-start h1 {
-  font-size: 70px;
-  color: #42DD76;
-}
-
-.razer-youtube {
-  margin: 0;
-}
-.razer-youtube iframe {
-  width: 100%;
-  height: 300px;
+.razer-footer .razer-end img {
+  width: 250px;
 }
 
 /* VARIABLES */
-.logitech-start {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+/* SCIENCE WINS, NOT LUCK.™ */
+.logitech-start h1 {
+  color: #28AADC;
+  font-size: 65px;
   text-align: center;
-  margin: 0;
 }
 .logitech-start h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: normal;
   font-size: 25px;
   color: #FFFFFF;
-}
-.logitech-start h1 {
-  font-size: 70px;
-  color: #28AADC;
+  text-align: center;
 }
 
-.logitech-youtube {
+.logitech-cards-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  gap: 2px;
+  /* G213 Prodigy  */
+  /* G513 */
+  /* G703 */
+  /* G502 HERO */
+  /* G733 */
+  /* G560 */
+  /* G740 */
+  /* G640 */
+  /* EMBODY */
+}
+.logitech-cards-container .product-card-1 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-1 img {
+  width: 94%;
+  height: 250px;
+}
+.logitech-cards-container .product-card-1 h2 {
+  color: #28AADC;
+  font-size: 30px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-1 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.logitech-cards-container .product-card-1 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.logitech-cards-container .product-card-1 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.logitech-cards-container .product-card-1 .price-button button {
+  background-color: #28AADC;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.logitech-cards-container .product-card-1 .price-button button:hover {
+  background-color: #34c6ff;
+}
+.logitech-cards-container .product-card-1:hover {
+  background-color: #222222;
+}
+.logitech-cards-container .product-card-2 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-2 img {
+  width: 94%;
+  height: 250px;
+}
+.logitech-cards-container .product-card-2 h2 {
+  color: #34c6ff;
+  font-size: 30px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-2 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.logitech-cards-container .product-card-2 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.logitech-cards-container .product-card-2 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.logitech-cards-container .product-card-2 .price-button button {
+  background-color: #28AADC;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.logitech-cards-container .product-card-2 .price-button button:hover {
+  background-color: #34c6ff;
+}
+.logitech-cards-container .product-card-2:hover {
+  background-color: #222222;
+}
+.logitech-cards-container .product-card-3 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-3 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.logitech-cards-container .product-card-3 h2 {
+  color: #34c6ff;
+  font-size: 30px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-3 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.logitech-cards-container .product-card-3 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.logitech-cards-container .product-card-3 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.logitech-cards-container .product-card-3 .price-button button {
+  background-color: #28AADC;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.logitech-cards-container .product-card-3 .price-button button:hover {
+  background-color: #34c6ff;
+}
+.logitech-cards-container .product-card-3:hover {
+  background-color: #222222;
+}
+.logitech-cards-container .product-card-4 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-4 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.logitech-cards-container .product-card-4 h2 {
+  color: #34c6ff;
+  font-size: 30px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-4 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.logitech-cards-container .product-card-4 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.logitech-cards-container .product-card-4 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.logitech-cards-container .product-card-4 .price-button button {
+  background-color: #28AADC;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.logitech-cards-container .product-card-4 .price-button button:hover {
+  background-color: #34c6ff;
+}
+.logitech-cards-container .product-card-4:hover {
+  background-color: #222222;
+}
+.logitech-cards-container .product-card-5 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-5 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.logitech-cards-container .product-card-5 h2 {
+  color: #34c6ff;
+  font-size: 30px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-5 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.logitech-cards-container .product-card-5 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.logitech-cards-container .product-card-5 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.logitech-cards-container .product-card-5 .price-button button {
+  background-color: #28AADC;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.logitech-cards-container .product-card-5 .price-button button:hover {
+  background-color: #34c6ff;
+}
+.logitech-cards-container .product-card-5:hover {
+  background-color: #222222;
+}
+.logitech-cards-container .product-card-6 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-6 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.logitech-cards-container .product-card-6 h2 {
+  color: #34c6ff;
+  font-size: 30px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-6 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.logitech-cards-container .product-card-6 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.logitech-cards-container .product-card-6 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.logitech-cards-container .product-card-6 .price-button button {
+  background-color: #28AADC;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.logitech-cards-container .product-card-6 .price-button button:hover {
+  background-color: #34c6ff;
+}
+.logitech-cards-container .product-card-6:hover {
+  background-color: #222222;
+}
+.logitech-cards-container .product-card-7 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-7 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.logitech-cards-container .product-card-7 h2 {
+  color: #34c6ff;
+  font-size: 30px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-7 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.logitech-cards-container .product-card-7 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.logitech-cards-container .product-card-7 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.logitech-cards-container .product-card-7 .price-button button {
+  background-color: #28AADC;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.logitech-cards-container .product-card-7 .price-button button:hover {
+  background-color: #34c6ff;
+}
+.logitech-cards-container .product-card-7:hover {
+  background-color: #222222;
+}
+.logitech-cards-container .product-card-8 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-8 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.logitech-cards-container .product-card-8 h2 {
+  color: #34c6ff;
+  font-size: 30px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-8 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.logitech-cards-container .product-card-8 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.logitech-cards-container .product-card-8 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.logitech-cards-container .product-card-8 .price-button button {
+  background-color: #28AADC;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.logitech-cards-container .product-card-8 .price-button button:hover {
+  background-color: #34c6ff;
+}
+.logitech-cards-container .product-card-8:hover {
+  background-color: #222222;
+}
+.logitech-cards-container .product-card-9 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-9 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.logitech-cards-container .product-card-9 h2 {
+  color: #34c6ff;
+  font-size: 30px;
+  text-align: center;
+}
+.logitech-cards-container .product-card-9 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.logitech-cards-container .product-card-9 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.logitech-cards-container .product-card-9 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.logitech-cards-container .product-card-9 .price-button button {
+  background-color: #28AADC;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.logitech-cards-container .product-card-9 .price-button button:hover {
+  background-color: #34c6ff;
+}
+.logitech-cards-container .product-card-9:hover {
+  background-color: #222222;
+}
+
+/* SLOGAN & YOUTUBE VIDEO */
+.logitech-footer h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.logitech-footer .logitech-youtube {
+  margin: 0;
+  text-align: center;
+}
+.logitech-footer .logitech-youtube iframe {
+  width: 100%;
+  height: 315px;
+}
+.logitech-footer .logitech-end {
+  text-align: center;
   margin: 0;
 }
-.logitech-youtube iframe {
-  width: 100%;
-  height: 300px;
+.logitech-footer .logitech-end img {
+  width: 250px;
+  padding-bottom: 10px;
 }
 
 /* VARIABLES */
+/* PLAY AT YOUR LEVEL.™ */
+.corsair-start h1 {
+  color: #ECE81A;
+  font-size: 50px;
+  text-align: center;
+}
+.corsair-start h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 25px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.corsair-cards-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  gap: 2px;
+  /* K55 RGB PRO XT */
+  /* K70 RGB PRO */
+  /* M75 WIRELESS Lightweight RGB */
+  /* M65 RGB ULTRA */
+  /* HS55 WIRELESS CORE */
+  /* VOID RGB ELITE */
+  /* XENEON */
+  /* MM200 */
+  /* CAPRICORNUS C502 */
+}
+.corsair-cards-container .product-card-1 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-1 img {
+  width: 94%;
+  height: 250px;
+}
+.corsair-cards-container .product-card-1 h2 {
+  color: #ECE81A;
+  font-size: 30px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-1 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.corsair-cards-container .product-card-1 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.corsair-cards-container .product-card-1 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.corsair-cards-container .product-card-1 .price-button button {
+  background-color: #ECE81A;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.corsair-cards-container .product-card-1 .price-button button:hover {
+  background-color: #fffc5c;
+}
+.corsair-cards-container .product-card-1:hover {
+  background-color: #222222;
+}
+.corsair-cards-container .product-card-2 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-2 img {
+  width: 94%;
+  height: 250px;
+}
+.corsair-cards-container .product-card-2 h2 {
+  color: #ECE81A;
+  font-size: 30px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-2 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.corsair-cards-container .product-card-2 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.corsair-cards-container .product-card-2 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.corsair-cards-container .product-card-2 .price-button button {
+  background-color: #ECE81A;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.corsair-cards-container .product-card-2 .price-button button:hover {
+  background-color: #fffc5c;
+}
+.corsair-cards-container .product-card-2:hover {
+  background-color: #222222;
+}
+.corsair-cards-container .product-card-3 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-3 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.corsair-cards-container .product-card-3 h2 {
+  color: #ECE81A;
+  font-size: 30px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-3 p {
+  color: white;
+  font-size: 15px;
+  margin-left: 5px;
+  text-align: left;
+}
+.corsair-cards-container .product-card-3 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.corsair-cards-container .product-card-3 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.corsair-cards-container .product-card-3 .price-button button {
+  background-color: #ECE81A;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.corsair-cards-container .product-card-3 .price-button button:hover {
+  background-color: #fffc5c;
+}
+.corsair-cards-container .product-card-3:hover {
+  background-color: #222222;
+}
+.corsair-cards-container .product-card-4 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-4 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.corsair-cards-container .product-card-4 h2 {
+  color: #ECE81A;
+  font-size: 30px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-4 p {
+  color: white;
+  font-size: 15px;
+  margin-left: 5px;
+  text-align: left;
+}
+.corsair-cards-container .product-card-4 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.corsair-cards-container .product-card-4 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.corsair-cards-container .product-card-4 .price-button button {
+  background-color: #ECE81A;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.corsair-cards-container .product-card-4 .price-button button:hover {
+  background-color: #fffc5c;
+}
+.corsair-cards-container .product-card-4:hover {
+  background-color: #222222;
+}
+.corsair-cards-container .product-card-5 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-5 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.corsair-cards-container .product-card-5 h2 {
+  color: #ECE81A;
+  font-size: 30px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-5 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.corsair-cards-container .product-card-5 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.corsair-cards-container .product-card-5 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.corsair-cards-container .product-card-5 .price-button button {
+  background-color: #ECE81A;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.corsair-cards-container .product-card-5 .price-button button:hover {
+  background-color: #fffc5c;
+}
+.corsair-cards-container .product-card-5:hover {
+  background-color: #222222;
+}
+.corsair-cards-container .product-card-6 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-6 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.corsair-cards-container .product-card-6 h2 {
+  color: #ECE81A;
+  font-size: 30px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-6 p {
+  color: white;
+  font-size: 15px;
+  margin-left: 5px;
+  text-align: left;
+}
+.corsair-cards-container .product-card-6 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.corsair-cards-container .product-card-6 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.corsair-cards-container .product-card-6 .price-button button {
+  background-color: #ECE81A;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.corsair-cards-container .product-card-6 .price-button button:hover {
+  background-color: #fffc5c;
+}
+.corsair-cards-container .product-card-6:hover {
+  background-color: #222222;
+}
+.corsair-cards-container .product-card-7 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-7 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.corsair-cards-container .product-card-7 h2 {
+  color: #ECE81A;
+  font-size: 30px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-7 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.corsair-cards-container .product-card-7 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.corsair-cards-container .product-card-7 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.corsair-cards-container .product-card-7 .price-button button {
+  background-color: #ECE81A;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.corsair-cards-container .product-card-7 .price-button button:hover {
+  background-color: #fffc5c;
+}
+.corsair-cards-container .product-card-7:hover {
+  background-color: #222222;
+}
+.corsair-cards-container .product-card-8 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-8 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.corsair-cards-container .product-card-8 h2 {
+  color: #ECE81A;
+  font-size: 30px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-8 p {
+  color: white;
+  font-size: 15px;
+  margin-left: 5px;
+  text-align: left;
+}
+.corsair-cards-container .product-card-8 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.corsair-cards-container .product-card-8 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.corsair-cards-container .product-card-8 .price-button button {
+  background-color: #ECE81A;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.corsair-cards-container .product-card-8 .price-button button:hover {
+  background-color: #fffc5c;
+}
+.corsair-cards-container .product-card-8:hover {
+  background-color: #222222;
+}
+.corsair-cards-container .product-card-9 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-9 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.corsair-cards-container .product-card-9 h2 {
+  color: #ECE81A;
+  font-size: 30px;
+  text-align: center;
+}
+.corsair-cards-container .product-card-9 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.corsair-cards-container .product-card-9 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.corsair-cards-container .product-card-9 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.corsair-cards-container .product-card-9 .price-button button {
+  background-color: #ECE81A;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.corsair-cards-container .product-card-9 .price-button button:hover {
+  background-color: #fffc5c;
+}
+.corsair-cards-container .product-card-9:hover {
+  background-color: #222222;
+}
+
+/* CORSAIR VIDEO LOOP */
 .corsair-video {
   margin: 0;
 }
@@ -639,84 +2139,563 @@ footer .cuadrante-5 .footer-items-5 a img:hover {
   height: 100%;
 }
 
-.corsair-start {
+/* SLOGAN & YOUTUBE VIDEO */
+.corsair-footer h2 {
   font-family: "Titillium Web", sans-serif;
-  font-weight: 700;
+  font-weight: 200;
   font-style: normal;
+  font-size: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 15px;
+}
+.corsair-footer .corsair-youtube {
+  margin: 0;
+  text-align: center;
+}
+.corsair-footer .corsair-youtube iframe {
+  width: 100%;
+  height: 200px;
+}
+.corsair-footer .corsair-end {
   text-align: center;
   margin: 0;
 }
-.corsair-start h2 {
-  font-size: 25px;
-  color: #FFFFFF;
-}
-.corsair-start h1 {
-  font-size: 70px;
-  color: #ECE81A;
-}
-
-.corsair-youtube {
-  margin: 0;
-}
-.corsair-youtube iframe {
-  width: 100%;
-  height: 300px;
+.corsair-footer .corsair-end img {
+  width: 250px;
+  padding-bottom: 10px;
 }
 
 /* VARIABLES */
-.redragon-start {
+/* TEAMREDRAGON.™ */
+.redragon-start h1 {
+  color: #E60012;
+  font-size: 50px;
+  text-align: center;
+}
+.redragon-start h2 {
   font-family: "Titillium Web", sans-serif;
-  font-weight: 700;
+  font-weight: 200;
   font-style: normal;
+  font-size: 25px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.redragon-cards-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  gap: 2px;
+  /* SHIVA K512 */
+  /* HORUS K618 */
+  /* STORM PRO */
+  /* VAMPIRE M720 */
+  /* H510 ZEUS-X */
+  /* GS570 */
+  /* JADE */
+  /* P012 */
+  /* CAPRICORNUS C502 */
+}
+.redragon-cards-container .product-card-1 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-1 img {
+  width: 94%;
+  height: 250px;
+}
+.redragon-cards-container .product-card-1 h2 {
+  color: #E60012;
+  font-size: 30px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-1 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.redragon-cards-container .product-card-1 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.redragon-cards-container .product-card-1 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.redragon-cards-container .product-card-1 .price-button button {
+  background-color: #E60012;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.redragon-cards-container .product-card-1 .price-button button:hover {
+  background-color: #FF0E0D;
+}
+.redragon-cards-container .product-card-1:hover {
+  background-color: #222222;
+}
+.redragon-cards-container .product-card-2 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-2 img {
+  width: 94%;
+  height: 250px;
+}
+.redragon-cards-container .product-card-2 h2 {
+  color: #E60012;
+  font-size: 30px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-2 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.redragon-cards-container .product-card-2 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.redragon-cards-container .product-card-2 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.redragon-cards-container .product-card-2 .price-button button {
+  background-color: #E60012;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.redragon-cards-container .product-card-2 .price-button button:hover {
+  background-color: #FF0E0D;
+}
+.redragon-cards-container .product-card-2:hover {
+  background-color: #222222;
+}
+.redragon-cards-container .product-card-3 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-3 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.redragon-cards-container .product-card-3 h2 {
+  color: #E60012;
+  font-size: 30px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-3 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.redragon-cards-container .product-card-3 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.redragon-cards-container .product-card-3 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.redragon-cards-container .product-card-3 .price-button button {
+  background-color: #E60012;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.redragon-cards-container .product-card-3 .price-button button:hover {
+  background-color: #FF0E0D;
+}
+.redragon-cards-container .product-card-3:hover {
+  background-color: #222222;
+}
+.redragon-cards-container .product-card-4 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-4 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.redragon-cards-container .product-card-4 h2 {
+  color: #E60012;
+  font-size: 30px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-4 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.redragon-cards-container .product-card-4 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.redragon-cards-container .product-card-4 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.redragon-cards-container .product-card-4 .price-button button {
+  background-color: #E60012;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.redragon-cards-container .product-card-4 .price-button button:hover {
+  background-color: #FF0E0D;
+}
+.redragon-cards-container .product-card-4:hover {
+  background-color: #222222;
+}
+.redragon-cards-container .product-card-5 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-5 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.redragon-cards-container .product-card-5 h2 {
+  color: #E60012;
+  font-size: 30px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-5 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.redragon-cards-container .product-card-5 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.redragon-cards-container .product-card-5 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.redragon-cards-container .product-card-5 .price-button button {
+  background-color: #E60012;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.redragon-cards-container .product-card-5 .price-button button:hover {
+  background-color: #FF0E0D;
+}
+.redragon-cards-container .product-card-5:hover {
+  background-color: #222222;
+}
+.redragon-cards-container .product-card-6 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-6 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.redragon-cards-container .product-card-6 h2 {
+  color: #E60012;
+  font-size: 30px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-6 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.redragon-cards-container .product-card-6 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.redragon-cards-container .product-card-6 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.redragon-cards-container .product-card-6 .price-button button {
+  background-color: #E60012;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.redragon-cards-container .product-card-6 .price-button button:hover {
+  background-color: #FF0E0D;
+}
+.redragon-cards-container .product-card-6:hover {
+  background-color: #222222;
+}
+.redragon-cards-container .product-card-7 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-7 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.redragon-cards-container .product-card-7 h2 {
+  color: #E60012;
+  font-size: 30px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-7 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.redragon-cards-container .product-card-7 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.redragon-cards-container .product-card-7 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.redragon-cards-container .product-card-7 .price-button button {
+  background-color: #E60012;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.redragon-cards-container .product-card-7 .price-button button:hover {
+  background-color: #FF0E0D;
+}
+.redragon-cards-container .product-card-7:hover {
+  background-color: #222222;
+}
+.redragon-cards-container .product-card-8 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-8 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.redragon-cards-container .product-card-8 h2 {
+  color: #E60012;
+  font-size: 30px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-8 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.redragon-cards-container .product-card-8 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.redragon-cards-container .product-card-8 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.redragon-cards-container .product-card-8 .price-button button {
+  background-color: #E60012;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.redragon-cards-container .product-card-8 .price-button button:hover {
+  background-color: #FF0E0D;
+}
+.redragon-cards-container .product-card-8:hover {
+  background-color: #222222;
+}
+.redragon-cards-container .product-card-9 {
+  flex: 0 0 250px;
+  margin: 1px 10px;
+  border-radius: 15px;
+  background-color: #111111;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-9 img {
+  width: 200;
+  height: 250px;
+  padding: 20px 0;
+}
+.redragon-cards-container .product-card-9 h2 {
+  color: #E60012;
+  font-size: 30px;
+  text-align: center;
+}
+.redragon-cards-container .product-card-9 p {
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
+  text-align: left;
+}
+.redragon-cards-container .product-card-9 .price-button {
+  display: flex;
+  justify-content: space-around;
+}
+.redragon-cards-container .product-card-9 .price-button span {
+  color: white;
+  font-size: 25px;
+}
+.redragon-cards-container .product-card-9 .price-button button {
+  background-color: #E60012;
+  color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  text-align: right;
+  border-radius: 5px;
+  border: solid;
+  font-weight: 600;
+  cursor: pointer;
+}
+.redragon-cards-container .product-card-9 .price-button button:hover {
+  background-color: #FF0E0D;
+}
+.redragon-cards-container .product-card-9:hover {
+  background-color: #222222;
+}
+
+/* SLOGAN & YOUTUBE VIDEO */
+.redragon-footer h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 15px;
+}
+.redragon-footer .redragon-youtube {
+  margin: 0;
+  text-align: center;
+}
+.redragon-footer .redragon-youtube iframe {
+  width: 100%;
+  height: 315px;
+}
+.redragon-footer .redragon-end {
   text-align: center;
   margin: 0;
 }
-.redragon-start h2 {
-  font-size: 25px;
-  color: #FFFFFF;
-}
-.redragon-start h1 {
-  font-size: 70px;
-  color: #AF0018;
+.redragon-footer .redragon-end img {
+  width: 250px;
+  padding-bottom: 10px;
 }
 
-.redragon-youtube {
-  margin: 0;
-}
-.redragon-youtube iframe {
-  width: 100%;
-  height: 300px;
-}
-
-/* LA VERSIÓN ANTERIOR ESTÁ HECHA PARA PANTALLAS DESDE 320px. 
-DE AHORA EN ADELANTE EMPIEZO A ADAPTAR LA PÁGINA PARA OTROS TAMAÑOS */
+/* MEDIAQUERIES */
 /* MEDIA QUERY: DISPOSITIVOS & CELULARES PEQUEÑOS */
 @media (min-width: 426px) and (max-width: 582px) {
-  /* HEADER Y ZONA NAVEGABLE */
   header {
     font-size: 18px;
     margin: 13px 8px;
   }
-  .logo {
+  header .header-cuadrante-1 a .logo {
     width: 50px;
   }
-  .grid-header-items-3 {
-    width: 40px;
+  header .header-cuadrante-3 .grid-header-items-3 {
+    width: 30px;
+  }
+  header .header-cuadrante-4 .grid-header-items-3 {
+    width: 30px;
   }
   /* BANNER DE ENTRADA */
   .banner-1 {
     font-size: 17px;
   }
   /* INTERFAZ DE INICIO y VIDEO BACKGROUND */
-  h1 {
-    font-size: 27px;
+  .start-conteiner .newreleases {
+    font-size: 30px;
   }
-  .slogan {
+  .start-conteiner .slogan {
     font-size: 21px;
   }
-  .shopnow {
-    color: white;
-    font-size: 27px;
+  .start-conteiner .shopnow p {
+    font-size: 30px;
   }
   /* BANNER DE ENTRADA A LAS MARCAS */
   .banner-2 {
@@ -724,9 +2703,9 @@ DE AHORA EN ADELANTE EMPIEZO A ADAPTAR LA PÁGINA PARA OTROS TAMAÑOS */
   }
   /* NAVEGADOR DE LAS MARCAS ASOCIADAS */
   .main-brands {
-    border-bottom: 7px solid #020C9F;
+    border-bottom: 7px solid #040450;
   }
-  .brands {
+  .main-brands a .brands {
     height: 100px;
     width: 100px;
     padding: 14px 14px;
@@ -736,290 +2715,700 @@ DE AHORA EN ADELANTE EMPIEZO A ADAPTAR LA PÁGINA PARA OTROS TAMAÑOS */
     font-size: 17px;
   }
   /* SECCIÓN DE PERIFÉRICOS */
+  .gears-conteiner {
+    padding: 20px 25px;
+  }
   .gears-conteiner img {
     width: 100%;
-    height: 35px;
+    height: 40px;
     transition: transform 0.3s ease;
   }
   .gears-conteiner a {
     margin: 2px 6px;
     font-size: 12px;
   }
-}
-/*MEDIA QUERY: CELULARES MEDIANOS & TABLETS*/
-@media (min-width: 583px) and (max-width: 768px) {
-  /* HEADER Y ZONA NAVEGABLE */
-  header {
-    font-size: 20px;
-    margin: 13px 8px;
+  /* BANNER DE ENVÍOS */
+  .banner-4 {
+    display: flex;
+    justify-content: space-between;
   }
-  .logo {
+  .banner-4 .shipments img {
+    width: 40px;
+    height: 50px;
+  }
+  .banner-4 .shipments span {
+    color: white;
+    font-size: 12px;
+  }
+  .banner-4 .warranty img {
+    width: 40px;
+    height: 50px;
+  }
+  .banner-4 .warranty span {
+    color: white;
+    font-size: 12px;
+  }
+  .razer-start h1 {
+    font-size: 55px;
+  }
+  .razer-start .razer-slogan-1 {
+    font-size: 35px;
+  }
+  /* RAZER VIDEO LOOP */
+  .razer-video {
+    margin: 0;
+  }
+  .razer-video .razer-video-gears {
+    width: 100%;
+    height: 100%;
+  }
+  /* SLOGAN & YOUTUBE VIDEO */
+  .razer-footer h2 {
+    font-size: 31px;
+    color: #FFFFFF;
+  }
+  .razer-footer .razer-youtube iframe {
+    width: 100%;
+    height: 475px;
+  }
+  .razer-footer .razer-end img {
+    width: 300px;
+  }
+  .logitech-start h1 {
+    font-size: 60px;
+  }
+  .logitech-start h2 {
+    font-size: 36px;
+  }
+  /* SLOGAN & YOUTUBE VIDEO */
+  .logitech-footer h2 {
+    font-size: 28px;
+  }
+  .logitech-footer .logitech-youtube iframe {
+    width: 100%;
+    height: 450px;
+  }
+  .logitech-footer .logitech-end img {
+    width: 300px;
+  }
+  .corsair-start h1 {
+    font-size: 60px;
+  }
+  .corsair-start h2 {
+    font-size: 43px;
+  }
+  /* CORSAIR VIDEO LOOP */
+  .corsair-video {
+    margin: 0;
+  }
+  .corsair-video .razer-video-gears {
+    width: 100%;
+    height: 100%;
+  }
+  /* SLOGAN & YOUTUBE VIDEO */
+  .corsair-footer h2 {
+    font-size: 40px;
+    color: #FFFFFF;
+  }
+  .corsair-footer .corsair-youtube iframe {
+    width: 100%;
+    height: 475px;
+  }
+  .corsair-footer .corsair-end img {
+    width: 300px;
+  }
+  .redragon-start h1 {
+    font-size: 60px;
+  }
+  .redragon-start h2 {
+    font-size: 40px;
+  }
+  /* SLOGAN & YOUTUBE VIDEO */
+  .redragon-footer h2 {
+    font-size: 28px;
+  }
+  .redragon-footer .redragon-youtube iframe {
+    width: 100%;
+    height: 450px;
+  }
+  .redragon-footer .redragon-end img {
+    width: 300px;
+  }
+}
+/* MEDIA QUERY: CELULARES MEDIANOS & TABLETS */
+@media (min-width: 583px) and (max-width: 768px) {
+  header {
+    font-size: 21px;
+    margin: 13px 8px;
+    grid-template-columns: 65px auto 35px 1% 35px;
+  }
+  header .header-cuadrante-1 a .logo {
     width: 65px;
   }
-  .grid-header-items-3 {
+  header .header-cuadrante-3 .grid-header-items-3 {
+    width: 35px;
+  }
+  header .header-cuadrante-4 .grid-header-items-3 {
+    width: 35px;
+  }
+  /* BANNER DE ENTRADA */
+  .banner-1 {
+    font-size: 18px;
+  }
+  /* INTERFAZ DE INICIO y VIDEO BACKGROUND */
+  .start-conteiner .newreleases {
+    font-size: 41px;
+  }
+  .start-conteiner .slogan {
+    font-size: 24px;
+  }
+  .start-conteiner .shopnow p {
+    font-size: 40px;
+  }
+  /* BANNER DE ENTRADA A LAS MARCAS */
+  .banner-2 {
+    font-size: 18px;
+  }
+  /* NAVEGADOR DE LAS MARCAS ASOCIADAS */
+  .main-brands {
+    border-bottom: 7px solid #040450;
+  }
+  .main-brands a .brands {
+    height: 125px;
+    width: 125px;
+    padding: 20px 20px;
+  }
+  /* BANNER DE ENTRADA A LOS PERIFÉRICOS */
+  .banner-3 {
+    font-size: 18px;
+  }
+  /* SECCIÓN DE PERIFÉRICOS */
+  .gears-conteiner {
+    padding: 20px 40px;
+    gap: 1px 1px;
+  }
+  .gears-conteiner img {
+    width: 100%;
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+  .gears-conteiner a {
+    margin: 2px 6px;
+    font-size: 14px;
+  }
+  /* BANNER DE ENVÍOS */
+  .banner-4 {
+    display: flex;
+    justify-content: center;
+  }
+  .banner-4 .shipments img {
+    width: 45px;
+    height: 55px;
+  }
+  .banner-4 .shipments span {
+    color: white;
+    font-size: 14px;
+    padding-right: 15px;
+  }
+  .banner-4 .warranty img {
+    width: 50px;
+    height: 55px;
+    padding-left: 15px;
+  }
+  .banner-4 .warranty span {
+    color: white;
+    font-size: 14px;
+  }
+  .razer-start h1 {
+    font-size: 60px;
+  }
+  .razer-start .razer-slogan-1 {
+    font-size: 40px;
+  }
+  /* SLOGAN & YOUTUBE VIDEO */
+  .razer-footer h2 {
+    font-size: 31px;
+    color: #FFFFFF;
+  }
+  .razer-footer .razer-youtube iframe {
+    width: 100%;
+    height: 550px;
+  }
+  .razer-footer .razer-end img {
+    width: 350px;
+  }
+  .logitech-start h1 {
+    font-size: 70px;
+  }
+  .logitech-start h2 {
+    font-size: 40px;
+  }
+  /* SLOGAN & YOUTUBE VIDEO */
+  .logitech-footer h2 {
+    font-size: 35px;
+  }
+  .logitech-footer .logitech-youtube iframe {
+    width: 100%;
+    height: 550px;
+  }
+  .logitech-footer .logitech-end img {
+    width: 350px;
+  }
+  .corsair-start h1 {
+    font-size: 70px;
+  }
+  .corsair-start h2 {
+    font-size: 50px;
+  }
+  /* CORSAIR VIDEO LOOP */
+  .corsair-video {
+    margin: 0;
+  }
+  .corsair-video .razer-video-gears {
+    width: 100%;
+    height: 100%;
+  }
+  /* SLOGAN & YOUTUBE VIDEO */
+  .corsair-footer h2 {
+    font-size: 50px;
+    color: #FFFFFF;
+  }
+  .corsair-footer .corsair-youtube iframe {
+    width: 100%;
+    height: 550px;
+  }
+  .corsair-footer .corsair-end img {
+    width: 350px;
+  }
+  .redragon-start h1 {
+    font-size: 70px;
+  }
+  .redragon-start h2 {
+    font-size: 50px;
+  }
+  /* SLOGAN & YOUTUBE VIDEO */
+  .redragon-footer h2 {
+    font-size: 50px;
+  }
+  .redragon-footer .redragon-youtube iframe {
+    width: 100%;
+    height: 550px;
+  }
+  .redragon-footer .redragon-end img {
+    width: 350px;
+  }
+}
+/* MEDIA QUERY: CELULARES MEDIANOS & TABLETS PEQUEÑAS */
+@media (min-width: 769px) and (max-width: 1023px) {
+  header {
+    font-size: 24px;
+    margin: 13px 8px;
+    grid-template-columns: 75px auto 40px 1% 40px;
+  }
+  header .header-cuadrante-1 a .logo {
+    width: 75px;
+  }
+  header .header-cuadrante-3 .grid-header-items-3 {
+    width: 40px;
+  }
+  header .header-cuadrante-4 .grid-header-items-3 {
     width: 40px;
   }
   /* BANNER DE ENTRADA */
   .banner-1 {
-    font-size: 18px;
+    font-size: 19px;
   }
   /* INTERFAZ DE INICIO y VIDEO BACKGROUND */
-  h1 {
-    font-size: 30px;
+  .start-conteiner .newreleases {
+    font-size: 55px;
   }
-  .slogan {
-    font-size: 24px;
+  .start-conteiner .slogan {
+    font-size: 34px;
   }
-  .shopnow {
-    color: white;
-    font-size: 30px;
+  .start-conteiner .shopnow p {
+    font-size: 55px;
   }
   /* BANNER DE ENTRADA A LAS MARCAS */
   .banner-2 {
-    font-size: 18px;
+    font-size: 19px;
   }
   /* NAVEGADOR DE LAS MARCAS ASOCIADAS */
-  .brands {
-    height: 120px;
-    width: 120px;
-    padding: 20px 20px;
+  .main-brands {
+    border-bottom: 7px solid #040450;
   }
-  /* BANNER DE ENTRADA A LOS PERIFÉRICOS */
-  .banner-3 {
-    font-size: 18px;
-  }
-  /* SECCIÓN DE PERIFÉRICOS */
-  .gears-conteiner img {
-    width: 100%;
-    height: 37px;
-    transition: transform 0.3s ease;
-  }
-  .gears-conteiner a {
-    margin: 2px 10px;
-    font-size: 13px;
-  }
-}
-/*MEDIA QUERY: TABLETS*/
-@media (min-width: 769px) and (max-width: 1023px) {
-  /* HEADER Y ZONA NAVEGABLE */
-  header {
-    font-size: 20px;
-    margin: 13px 15px;
-  }
-  .logo {
-    width: 75px;
-  }
-  .grid-header-items-3 {
-    width: 42px;
-  }
-  /* BANNER DE ENTRADA */
-  .banner-1 {
-    font-size: 20px;
-  }
-  /* INTERFAZ DE INICIO y VIDEO BACKGROUND */
-  h1 {
-    font-size: 35px;
-  }
-  .slogan {
-    font-size: 29px;
-  }
-  .shopnow {
-    color: white;
-    font-size: 35px;
-  }
-  /* BANNER DE ENTRADA A LAS MARCAS */
-  .banner-2 {
-    font-size: 20px;
-  }
-  /* NAVEGADOR DE LAS MARCAS ASOCIADAS */
-  .brands {
-    height: 140px;
-    width: 140px;
-    padding: 20px 20px;
-  }
-  /* BANNER DE ENTRADA A LOS PERIFÉRICOS */
-  .banner-3 {
-    font-size: 20px;
-  }
-  /* SECCIÓN DE PERIFÉRICOS */
-  .gears-conteiner img {
-    width: 100%;
-    height: 45px;
-    transition: transform 0.3s ease;
-  }
-  .gears-conteiner a {
-    margin: 2px 10px;
-    font-size: 15px;
-  }
-  /* FOOTER */
-  footer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 2;
-  }
-  .cuadrante-1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .grid-footer-items-1-a {
-    font-size: 14px;
-  }
-  footer .grid-footer-items-1-b span {
-    font-size: 11px;
-  }
-  footer .grid-footer-items-1-c span {
-    font-size: 15px;
-  }
-  .cuadrante-2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .footer-icons-2 {
-    padding: 3px;
-  }
-  .cuadrante-3 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-  .footer-icons-3 {
-    padding: 3px;
-  }
-  .cuadrante-4 {
-    grid-column: 4/5;
-    grid-row: 1/2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .grid-footer-items-4 a img {
-    width: 75px;
-  }
-  .cuadrante-5 {
-    grid-column: 1/5;
-    grid-row: 3/4;
-  }
-  .footer-icons-5-copyright {
-    font-size: 12px;
-  }
-  .footer-icons-5-powered {
-    font-size: 12px;
-  }
-}
-/*MEDIA QUERY: PC*/
-@media (min-width: 1024px) {
-  /* HEADER Y ZONA NAVEGABLE */
-  header {
-    font-size: 25px;
-    margin: 13px 15px;
-  }
-  .logo {
-    width: 90px;
-  }
-  .grid-header-items-3 {
-    width: 45px;
-  }
-  /* BANNER DE ENTRADA */
-  .banner-1 {
-    font-size: 22px;
-  }
-  /* INTERFAZ DE INICIO y VIDEO BACKGROUND */
-  h1 {
-    font-size: 45px;
-    padding-bottom: 20px;
-  }
-  .slogan {
-    font-size: 40px;
-    padding-bottom: 20px;
-  }
-  .shopnow {
-    color: white;
-    font-size: 45px;
-    padding-top: 20px;
-  }
-  /* BANNER DE ENTRADA A LAS MARCAS */
-  .banner-2 {
-    font-size: 22px;
-  }
-  /* NAVEGADOR DE LAS MARCAS ASOCIADAS */
-  .brands {
-    height: 180px;
-    width: 180px;
+  .main-brands a .brands {
+    height: 150px;
+    width: 150px;
     padding: 30px 30px;
   }
   /* BANNER DE ENTRADA A LOS PERIFÉRICOS */
   .banner-3 {
-    font-size: 22px;
+    font-size: 19px;
   }
   /* SECCIÓN DE PERIFÉRICOS */
+  .gears-conteiner {
+    padding: 30px 50px;
+    gap: 1px 1px;
+  }
   .gears-conteiner img {
     width: 100%;
-    height: 55px;
+    height: 50px;
     transition: transform 0.3s ease;
   }
   .gears-conteiner a {
-    margin: 2px 10px;
-    font-size: 17px;
+    margin: 2px 6px;
+    font-size: 15px;
+  }
+  /* BANNER DE ENVÍOS */
+  .banner-4 {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .banner-4 .shipments img {
+    width: 45px;
+    height: 55px;
+  }
+  .banner-4 .shipments span {
+    color: white;
+    font-size: 16px;
+    padding-right: 20px;
+  }
+  .banner-4 .warranty img {
+    width: 50px;
+    height: 55px;
+    padding-left: 20px;
+  }
+  .banner-4 .warranty span {
+    color: white;
+    font-size: 16px;
+  }
+  .razer-start h1 {
+    font-size: 80px;
+  }
+  .razer-start .razer-slogan-1 {
+    font-size: 50px;
+  }
+  /* SLOGAN & YOUTUBE VIDEO */
+  .razer-footer h2 {
+    font-size: 45px;
+    color: #FFFFFF;
+  }
+  .razer-footer .razer-youtube iframe {
+    width: 100%;
+    height: 650px;
+  }
+  .razer-footer .razer-end img {
+    width: 400px;
+  }
+  .logitech-start h1 {
+    font-size: 80px;
+  }
+  .logitech-start h2 {
+    font-size: 50px;
+  }
+  /* SLOGAN & YOUTUBE VIDEO */
+  .logitech-footer h2 {
+    font-size: 45px;
+  }
+  .logitech-footer .logitech-youtube iframe {
+    width: 100%;
+    height: 650px;
+  }
+  .logitech-footer .logitech-end img {
+    width: 400px;
+  }
+  .corsair-start h1 {
+    font-size: 70px;
+  }
+  .corsair-start h2 {
+    font-size: 50px;
+  }
+  /* SLOGAN & YOUTUBE VIDEO */
+  .corsair-footer h2 {
+    font-size: 60px;
+    color: #FFFFFF;
+  }
+  .corsair-footer .corsair-youtube iframe {
+    width: 100%;
+    height: 650px;
+  }
+  .corsair-footer .corsair-end img {
+    width: 350px;
+  }
+  .redragon-start h1 {
+    font-size: 75px;
+  }
+  .redragon-start h2 {
+    font-size: 55px;
+  }
+  /* SLOGAN & YOUTUBE VIDEO */
+  .redragon-footer h2 {
+    font-size: 60px;
+  }
+  .redragon-footer .redragon-youtube iframe {
+    width: 100%;
+    height: 650px;
+  }
+  .redragon-footer .redragon-end img {
+    width: 400px;
   }
   /* FOOTER */
   footer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 2;
+    grid-template-columns: repeat(3, 1fr) 100px;
+    grid-template-rows: 3;
   }
-  .grid-footer-title {
-    font-size: 22px;
-  }
-  .cuadrante-1 {
+  footer .cuadrante-1 {
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-left: 15px;
   }
-  .cuadrante-1 img {
-    width: 27px;
-    padding: 10px 0;
+  footer .cuadrante-1 .grid-footer-items-1-a {
+    font-size: 18px;
   }
-  .footer-icons-1 {
-    font-size: 22px;
+  footer .cuadrante-1 .grid-footer-items-1-b {
+    font-size: 15px;
   }
-  footer span {
-    font-size: 21px;
-  }
-  .cuadrante-2 {
+  footer .cuadrante-2 {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  .footer-icons-2 {
-    padding: 3px;
+  footer .cuadrante-2 .grid-footer-items-2 {
+    padding-top: 50px;
   }
-  .cuadrante-3 {
+  footer .cuadrante-3 {
     grid-column: 3/4;
     grid-row: 1/2;
   }
-  .footer-icons-3 {
-    padding: 3px;
+  footer .cuadrante-3 .grid-footer-items-3 {
+    padding-top: 50px;
+    align-items: center;
   }
-  .cuadrante-4 {
+  footer .cuadrante-3 .footer-icons-3 {
+    padding: 1px;
+  }
+  footer .cuadrante-4 {
     grid-column: 4/5;
     grid-row: 1/2;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .grid-footer-items-4 img {
-    width: 100px;
+  footer .cuadrante-4 .grid-footer-items-4 .logo {
+    width: 75px;
   }
-  .cuadrante-5 {
+  footer .cuadrante-5 {
     grid-column: 1/5;
     grid-row: 3/4;
   }
-  .footer-icons-5-copyright {
+  footer .cuadrante-5 .footer-items-5 .footer-icons-5-copyright {
+    font-size: 12px;
+  }
+  footer .cuadrante-5 .footer-items-5 .footer-icons-5-powered {
+    font-size: 12px;
+  }
+}
+/* MEDIA QUERY: PC */
+@media (min-width: 1024px) {
+  header {
+    font-size: 24px;
+    margin: 13px 8px;
+    grid-template-columns: 90px auto 40px 1% 40px;
+  }
+  header .header-cuadrante-1 a .logo {
+    width: 90px;
+  }
+  header .header-cuadrante-3 .grid-header-items-3 {
+    width: 40px;
+  }
+  header .header-cuadrante-4 .grid-header-items-3 {
+    width: 40px;
+  }
+  /* BANNER DE ENTRADA */
+  .banner-1 {
+    font-size: 20px;
+  }
+  /* INTERFAZ DE INICIO y VIDEO BACKGROUND */
+  .start-conteiner .newreleases {
+    font-size: 73px;
+  }
+  .start-conteiner .slogan {
+    font-size: 52px;
+  }
+  .start-conteiner .shopnow p {
+    font-size: 73px;
+  }
+  /* BANNER DE ENTRADA A LAS MARCAS */
+  .banner-2 {
+    font-size: 20px;
+  }
+  /* NAVEGADOR DE LAS MARCAS ASOCIADAS */
+  .main-brands {
+    border-bottom: 7px solid #040450;
+  }
+  .main-brands a .brands {
+    height: 200px;
+    width: 200px;
+    padding: 40px 55px;
+  }
+  /* BANNER DE ENTRADA A LOS PERIFÉRICOS */
+  .banner-3 {
+    font-size: 20px;
+  }
+  /* SECCIÓN DE PERIFÉRICOS */
+  .gears-conteiner {
+    padding: 30px 50px;
+    gap: 1px 1px;
+  }
+  .gears-conteiner img {
+    width: 100%;
+    height: 50px;
+    transition: transform 0.3s ease;
+  }
+  .gears-conteiner a {
+    margin: 2px 6px;
     font-size: 15px;
   }
-  .footer-icons-5-powered {
+  /* BANNER DE ENVÍOS */
+  .banner-4 {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .banner-4 .shipments img {
+    width: 45px;
+    height: 55px;
+  }
+  .banner-4 .shipments span {
+    color: white;
+    font-size: 16px;
+    padding-right: 20px;
+  }
+  .banner-4 .warranty img {
+    width: 55px;
+    height: 50px;
+    padding-left: 20px;
+  }
+  .banner-4 .warranty span {
+    color: white;
+    font-size: 16px;
+  }
+  .razer-start h1 {
+    font-size: 90px;
+  }
+  .razer-start .razer-slogan-1 {
+    font-size: 60px;
+  }
+  /* SLOGAN & YOUTUBE VIDEO */
+  .razer-footer h2 {
+    font-size: 60px;
+    color: #FFFFFF;
+  }
+  .razer-footer .razer-youtube iframe {
+    width: 100%;
+    height: 750px;
+  }
+  .logitech-start h1 {
+    font-size: 90px;
+  }
+  .logitech-start h2 {
+    font-size: 60px;
+  }
+  /* SLOGAN & YOUTUBE VIDEO */
+  .logitech-footer h2 {
+    font-size: 60px;
+  }
+  .logitech-footer .logitech-youtube iframe {
+    width: 100%;
+    height: 750px;
+  }
+  .corsair-start h1 {
+    font-size: 90px;
+  }
+  .corsair-start h2 {
+    font-size: 60px;
+  }
+  /* SLOGAN & YOUTUBE VIDEO */
+  .corsair-footer h2 {
+    font-size: 70px;
+  }
+  .corsair-footer .corsair-youtube iframe {
+    width: 100%;
+    height: 750px;
+  }
+  .corsair-footer .corsair-end img {
+    width: 350px;
+  }
+  .redragon-start h1 {
+    font-size: 90px;
+  }
+  .redragon-start h2 {
+    font-size: 60px;
+  }
+  /* SLOGAN & YOUTUBE VIDEO */
+  .redragon-footer h2 {
+    font-size: 70px;
+  }
+  .redragon-footer .redragon-youtube iframe {
+    width: 100%;
+    height: 750px;
+  }
+  .redragon-footer .redragon-end img {
+    width: 400px;
+  }
+  /* FOOTER */
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 120px;
+    grid-template-rows: 3;
+  }
+  footer .cuadrante-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  footer .cuadrante-1 .grid-footer-items-1-a {
+    font-size: 18px;
+  }
+  footer .cuadrante-1 .grid-footer-items-1-b {
+    font-size: 18px;
+  }
+  footer .cuadrante-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  footer .cuadrante-2 .grid-footer-items-2 {
+    padding-top: 50px;
+  }
+  footer .cuadrante-3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  footer .cuadrante-3 .grid-footer-items-3 {
+    padding-top: 50px;
+    align-items: center;
+  }
+  footer .cuadrante-3 .footer-icons-3 {
+    padding: 1px;
+  }
+  footer .cuadrante-4 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .cuadrante-4 .grid-footer-items-4 .logo {
+    width: 90px;
+  }
+  footer .cuadrante-5 {
+    grid-column: 1/5;
+    grid-row: 3/4;
+  }
+  footer .cuadrante-5 .footer-items-5 .footer-icons-5-copyright {
     font-size: 15px;
   }
-  .cuadrante-5 div a img {
-    width: 27px;
+  footer .cuadrante-5 .footer-items-5 .footer-icons-5-powered {
+    font-size: 13px;
   }
 }
 

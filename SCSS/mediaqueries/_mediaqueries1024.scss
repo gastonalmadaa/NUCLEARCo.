@@ -1,0 +1,252 @@
+// La versión "base" es para pantallas desde 320px.
+
+$color-blue-banner: #040450;
+
+/* MEDIA QUERY: PC */
+@media (min-width: 1024px) 
+{
+header 
+{font-size: 24px;
+margin: 13px 8px;
+grid-template-columns: 90px auto 40px 1% 40px;
+.header-cuadrante-1 a .logo
+{width: 90px;}
+.header-cuadrante-3 .grid-header-items-3
+{width: 40px;}
+.header-cuadrante-4 .grid-header-items-3
+{width: 40px;}
+}
+
+/* BANNER DE ENTRADA */
+.banner-1
+{font-size: 20px;}
+
+/* INTERFAZ DE INICIO y VIDEO BACKGROUND */
+.start-conteiner 
+{
+.newreleases {font-size: 73px;}
+.slogan {font-size: 52px;}
+.shopnow p {font-size: 73px;}
+}
+
+/* BANNER DE ENTRADA A LAS MARCAS */
+.banner-2  
+{font-size: 20px;}
+
+/* NAVEGADOR DE LAS MARCAS ASOCIADAS */
+.main-brands    
+{border-bottom: 7px solid $color-blue-banner;
+a .brands 
+{height: 200px;
+width: 200px;
+padding: 40px 55px;}
+}
+
+/* BANNER DE ENTRADA A LOS PERIFÉRICOS */
+.banner-3       
+{font-size: 20px;}
+
+/* SECCIÓN DE PERIFÉRICOS */
+.gears-conteiner 
+{padding: 30px 50px;
+gap: 1px 1px;
+    img 
+    {width: 100%;
+    height: 50px;
+    transition: transform 0.3s ease}
+
+    a      
+    {margin: 2px 6px;
+    font-size: 15px;}
+}
+
+/* BANNER DE ENVÍOS */
+.banner-4
+{display: flex;
+justify-content: center;
+padding: 20px 0;
+
+    .shipments 
+    {
+    img 
+    {width: 45px;
+    height: 55px;}
+
+    span 
+    {color: white;
+    font-size: 16px;
+    padding-right: 20px;}
+    }
+
+    .warranty
+    {
+    img 
+    {width: 55px;
+    height: 50px;
+    padding-left: 20px;}
+
+    span 
+    {color: white;
+    font-size: 16px;}
+    }
+
+}
+
+// RAZER
+.razer-start
+{
+    h1 {font-size: 90px;}
+    .razer-slogan-1 {font-size: 60px;}
+}
+
+/* SLOGAN & YOUTUBE VIDEO */
+.razer-footer 
+{
+h2 
+{
+font-size: 60px;
+color: $color-white-slogans;}
+
+.razer-youtube  
+{
+    iframe  
+    {width: 100%; 
+    height: 750px;}
+}
+}
+
+// Logitech
+.logitech-start
+{
+    h1 {font-size: 90px;}
+    h2 {font-size: 60px;}
+}
+
+/* SLOGAN & YOUTUBE VIDEO */
+.logitech-footer 
+{
+h2 
+{
+font-size: 60px;}
+
+.logitech-youtube  
+{
+    iframe  
+    {width: 100%; 
+    height: 750px;}
+}
+
+}
+
+// CORSAIR
+.corsair-start
+{
+    h1 {font-size: 90px;}
+    h2 {font-size: 60px;}
+}
+
+/* SLOGAN & YOUTUBE VIDEO */
+.corsair-footer 
+{
+h2 
+{font-size: 70px;}
+
+.corsair-youtube  
+{
+    iframe  
+    {width: 100%; 
+    height: 750px;}
+}
+
+.corsair-end
+{img 
+    {width: 350px;}
+}
+}
+
+// REDRAGON
+.redragon-start
+{
+    h1 {font-size: 90px;}
+    h2 {font-size: 60px;}
+}
+
+/* SLOGAN & YOUTUBE VIDEO */
+.redragon-footer 
+{
+h2 
+{
+font-size: 70px;}
+
+.redragon-youtube  
+{
+    iframe  
+    {width: 100%; 
+    height: 750px;}
+}
+
+.redragon-end
+{img 
+    {width: 400px;}
+}
+}
+
+/* FOOTER */
+footer 
+{
+
+display: grid;
+grid-template-columns: repeat(3, 1fr) 120px;
+grid-template-rows: 3;
+
+
+.cuadrante-1
+{
+grid-column: 1/2;
+grid-row: 1/2;
+    .grid-footer-items-1-a {font-size: 18px;}
+    .grid-footer-items-1-b {font-size: 18px;}
+}
+
+.cuadrante-2 
+{
+grid-column: 2/3;
+grid-row: 1/2;
+    .grid-footer-items-2 
+    {padding-top: 50px;}
+}
+
+.cuadrante-3
+{
+grid-column: 3/4;
+grid-row: 1/2;
+    .grid-footer-items-3 
+    {padding-top: 50px;
+    align-items: center;}
+    .footer-icons-3
+    {padding: 1px;}
+}
+
+.cuadrante-4
+{grid-column: 4/5;
+grid-row: 1/2;
+display: flex;
+align-items: center;
+justify-content: center;
+.grid-footer-items-4 .logo
+{width: 90px;}
+}
+
+.cuadrante-5
+{
+grid-column: 1/5;
+grid-row: 3/4;
+    .footer-items-5 
+    {
+    .footer-icons-5-copyright {font-size: 15px;}
+    .footer-icons-5-powered {font-size: 13px;}
+    }
+}
+
+}
+}

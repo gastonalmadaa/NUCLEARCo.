@@ -3,31 +3,548 @@
 /* VARIABLES */
 $color-white-slogans: #FFFFFF;
 $color-green-title: #42DD76;
+$color-darkgrey-products: #222222;
+$color-green-banner: #3CDB38;
 
-.razer-video
-{margin: 0;
-    .razer-video-gears 
-    {width: 100%;
-    height: 100%;}
-}
-
+/* FOR GAMER. BY GAMERS.™ */
 .razer-start
+{
+h1 {color: $color-green-title;
+font-size: 40px;
+text-align: center;}
+h2
 {font-family: "Titillium Web", sans-serif;
-font-weight: 700;
+font-weight: 200;
 font-style: normal;
+font-size: 25px;
+color: $color-white-slogans;
 text-align: center;
-margin: 0;
-    h2 
-    {font-size: 25px;
-    color: $color-white-slogans;}
-    h1 
-    {font-size: 70px;
-    color: $color-green-title}
+}
 }
 
-.razer-youtube 
-{margin: 0;
-    iframe 
-    {width: 100%;
-    height: 300px;}
+
+// PRODUCTOS
+.razer-cards-container 
+{
+display: inline-flex;
+flex-wrap: wrap; 
+justify-content: flex-start;
+width: 100%;
+margin: 0 auto;
+padding: 0;
+gap: 2px;
+
+/* ORNATA V3 */
+.product-card-1
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 94%;
+height: 250px;}
+
+h2 
+{color: $color-green-banner;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: #44D62C;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-green-title;}
+}
+}
+.product-card-1:hover {background-color: $color-darkgrey-products;}
+
+/* BLACKWIDOW V3 */
+.product-card-2
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 94%;
+height: 250px;}
+
+h2 
+{color: $color-green-banner;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: #44D62C;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-green-title;}
+}
+}
+.product-card-2:hover {background-color: $color-darkgrey-products;}
+
+/* VIPER ULTIMATE */
+.product-card-3
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 200;
+height: 250px;
+padding: 20px 0;}
+
+h2 
+{color: $color-green-banner;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: #44D62C;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-green-title;}
+}
+}
+.product-card-3:hover {background-color: $color-darkgrey-products;}
+
+/* BASILISK V3 */
+.product-card-4
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 200;
+height: 250px;
+padding: 20px 0;}
+
+h2 
+{color: $color-green-banner;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: #44D62C;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-green-title;}
+}
+}
+.product-card-4:hover {background-color: $color-darkgrey-products;}
+
+/* KRAKEN V3 */
+.product-card-5
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 200;
+height: 250px;
+padding: 20px 0;}
+
+h2 
+{color: $color-green-banner;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: #44D62C;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-green-title;}
+}
+}
+.product-card-5:hover {background-color: $color-darkgrey-products;}
+
+/* NOMMO SPEAKERS V2 Pro */
+.product-card-6
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 200;
+height: 250px;
+padding: 20px 0;}
+
+h2 
+{color: $color-green-banner;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: #44D62C;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-green-title;}
+}
+}
+.product-card-6:hover {background-color: $color-darkgrey-products;}
+
+/* ATLAS */
+.product-card-7
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 200;
+height: 250px;
+padding: 20px 0;}
+
+h2 
+{color: $color-green-banner;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: #44D62C;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-green-title;}
+}
+}
+.product-card-7:hover {background-color: $color-darkgrey-products;}
+
+/* GOLIATHUS */
+.product-card-8
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 200;
+height: 250px;
+padding: 20px 0;}
+
+h2 
+{color: $color-green-banner;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: #44D62C;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-green-title;}
+}
+}
+.product-card-8:hover {background-color: $color-darkgrey-products;}
+
+/* ISKUR V2 */
+.product-card-9
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 200;
+height: 250px;
+padding: 20px 0;}
+
+h2 
+{color: $color-green-banner;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: #44D62C;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-green-title;}
+}
+}
+.product-card-9:hover {background-color: $color-darkgrey-products;}
+
+/* FUJIN Pro */
+.product-card-10
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 200;
+height: 250px;
+padding: 20px 0;}
+
+h2 
+{color: $color-green-banner;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: #44D62C;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-green-title;}
+}
+}
+.product-card-10:hover {background-color: $color-darkgrey-products;}
+}
+
+/* RAZER VIDEO LOOP */
+.razer-video
+{margin: 0; 
+    .razer-video-gears 
+    {width: 100%; 
+    height: 100%;}
+} 
+
+/* SLOGAN & YOUTUBE VIDEO */
+.razer-footer 
+{
+h2 
+{font-family: "Titillium Web", sans-serif;
+font-weight: 200;
+font-style: normal;
+font-size: 20px;
+color: $color-white-slogans;
+text-align: center;}
+
+.razer-youtube  
+{margin: 0; 
+text-align: center;
+    iframe  
+    {width: 100%; 
+    height: 315px;}
+}
+
+.razer-end
+{text-align: center;
+    margin: 0;
+    img 
+    {width: 250px;}
+}
+
 }

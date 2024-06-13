@@ -3,25 +3,491 @@
 /* VARIABLES */
 $color-white-slogans: #FFFFFF;
 $color-skyblue-title: #28AADC;
+$color-skyblue-hover: #34c6ff;
 
-
+/* SCIENCE WINS, NOT LUCK.™ */
 .logitech-start
+{
+h1 {color: $color-skyblue-title;
+font-size: 65px;
+text-align: center;}
+h2
 {font-family: "Titillium Web", sans-serif;
-font-weight: 700;
+font-weight: 200;
 font-style: normal;
+font-size: 25px;
+color: $color-white-slogans;
 text-align: center;
-margin: 0;
-    h2 
-    {font-size: 25px;
-    color: $color-white-slogans;}
-    h1 
-    {font-size: 70px;
-    color: $color-skyblue-title}
+}
 }
 
-.logitech-youtube 
-{margin: 0;
-    iframe 
-    {width: 100%;
-    height: 300px;}
+
+// PRODUCTOS
+.logitech-cards-container 
+{
+display: inline-flex;
+flex-wrap: wrap; 
+justify-content: flex-start;
+width: 100%;
+margin: 0 auto;
+padding: 0;
+gap: 2px;
+
+/* G213 Prodigy  */
+.product-card-1
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 94%;
+height: 250px;}
+
+h2 
+{color: $color-skyblue-title;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: $color-skyblue-title;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-skyblue-hover;}
+}
+}
+.product-card-1:hover {background-color: $color-darkgrey-products;}
+
+/* G513 */
+.product-card-2
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 94%;
+height: 250px;}
+
+h2 
+{color: $color-skyblue-hover;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: $color-skyblue-title;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-skyblue-hover;}
+}
+}
+.product-card-2:hover {background-color: $color-darkgrey-products;}
+
+/* G703 */
+.product-card-3
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 200;
+height: 250px;
+padding: 20px 0;}
+
+h2 
+{color: $color-skyblue-hover;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: $color-skyblue-title;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-skyblue-hover;}
+}
+}
+.product-card-3:hover {background-color: $color-darkgrey-products;}
+
+/* G502 HERO */
+.product-card-4
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 200;
+height: 250px;
+padding: 20px 0;}
+
+h2 
+{color: $color-skyblue-hover;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: $color-skyblue-title;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-skyblue-hover;}
+}
+}
+.product-card-4:hover {background-color: $color-darkgrey-products;}
+
+/* G733 */
+.product-card-5
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 200;
+height: 250px;
+padding: 20px 0;}
+
+h2 
+{color: $color-skyblue-hover;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: $color-skyblue-title;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-skyblue-hover;}
+}
+}
+.product-card-5:hover {background-color: $color-darkgrey-products;}
+
+/* G560 */
+.product-card-6
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 200;
+height: 250px;
+padding: 20px 0;}
+
+h2 
+{color: $color-skyblue-hover;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: $color-skyblue-title;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-skyblue-hover;}
+}
+}
+.product-card-6:hover {background-color: $color-darkgrey-products;}
+
+/* G740 */
+.product-card-7
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 200;
+height: 250px;
+padding: 20px 0;}
+
+h2 
+{color: $color-skyblue-hover;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: $color-skyblue-title;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-skyblue-hover;}
+}
+}
+.product-card-7:hover {background-color: $color-darkgrey-products;}
+
+/* G640 */
+.product-card-8
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 200;
+height: 250px;
+padding: 20px 0;}
+
+h2 
+{color: $color-skyblue-hover;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: $color-skyblue-title;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-skyblue-hover;}
+}
+}
+.product-card-8:hover {background-color: $color-darkgrey-products;}
+
+/* EMBODY */
+.product-card-9
+{
+flex: 0 0 250px;
+margin: 1px 10px;
+border-radius: 15px;
+background-color: #111111;
+padding-bottom: 10px;
+text-align: center;
+
+img 
+{width: 200;
+height: 250px;
+padding: 20px 0;}
+
+h2 
+{color: $color-skyblue-hover;
+font-size: 30px;
+text-align: center;}
+
+p 
+{color: white;
+font-size: 17px;
+margin-left: 5px;
+text-align: left;}  
+
+.price-button
+{display: flex;
+justify-content: space-around;
+span 
+{color: white;
+font-size: 25px;}
+
+button 
+{background-color: $color-skyblue-title;
+color: black;
+font-size: 20px;
+padding: 0 2px;
+text-align: right;
+border-radius: 5px;
+border: solid;
+font-weight: 600;
+cursor: pointer;}
+button:hover {background-color: $color-skyblue-hover;}
+}
+}
+.product-card-9:hover {background-color: $color-darkgrey-products;}
+}
+
+/* SLOGAN & YOUTUBE VIDEO */
+.logitech-footer 
+{
+h2 
+{font-family: "Titillium Web", sans-serif;
+font-weight: 200;
+font-style: normal;
+font-size: 20px;
+color: $color-white-slogans;
+text-align: center;}
+
+.logitech-youtube  
+{margin: 0; 
+text-align: center;
+    iframe  
+    {width: 100%; 
+    height: 315px;}
+}
+
+.logitech-end
+{text-align: center;
+    margin: 0;
+    img 
+    {width: 250px;
+    padding-bottom: 10px;}
+}
 }

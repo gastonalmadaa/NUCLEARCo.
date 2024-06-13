@@ -3,6 +3,7 @@
 $color-green-banner: #3CDB38;
 $color-purple-banner: #87188A;
 $color-white-banner: #EEEEEE;
+$color-darkgrey-banner: #111111;
 
 @mixin banners ($bg, $color ,$align, $margin, $padding, $decoration, $fontfamily, $fontweight, $fontstyle, $fontsize)
 {background-color: $bg;
@@ -31,4 +32,33 @@ font-size: $fontsize;}
 {@include banners($color-white-banner, #040450, center, 0, 1px 0, none, "Titillium Web" sans-serif, 400, normal, 15px);
 }
 
+/* BANNER DE ENVÍOS */
+.banner-4
+{background-color: $color-darkgrey-banner;
+margin: 0;
+padding: 10px 10px;
+align-items: center;
+text-align: center;
+    .shipments 
+    {
+    img 
+    {width: 30px;
+    height: 35px;}
 
+    span 
+    {color: white;
+    font-size: 13px;}
+    }
+
+    .warranty
+    {
+    img 
+    {width: 30px;
+    height: 35px;}
+
+    span 
+    {color: white;
+    font-size: 13px;}
+    }
+
+}
